@@ -1,3 +1,8 @@
+@import url('http://fonts.cdnfonts.com/css/inter');
+:root {
+    --dark-gray: #131618;
+    --normal-gray: #282a35;
+}
 body {
     margin: 0;
     padding: 0;
@@ -7,12 +12,15 @@ body {
     bottom: 0;
     left: 0;
     right: 0;
+    background-image: url(https://forums.comunidades.riotgames.com/t5/image/serverpage/image-id/4519i33D4EDDD364A28F8?v=v2);
+    background-size: cover;
+    font-family: 'Inter', sans-serif;
+    color: #E2E4E9;
 }
 
 a {
     text-decoration: none;
     display: inline;
-    color: black;
 }
 
 header {
@@ -25,7 +33,7 @@ header {
 header .header-icons-container {
     width: 100%;
     height: 3rem;
-    background-color: #47cfac;
+    background-color: var(--normal-gray);
     display: flex;
     justify-content: flex-end;
 }
@@ -40,9 +48,15 @@ header .header-icons-container .icons{
 }
 
 header .icons span {
-    color: white;
+    color: #E2E4E9;
 }
-
+.nav-container {
+    background-color: var(--dark-gray);
+    width: 100%;
+    height: auto;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0rem 1rem 3rem var(--dark-gray);
+}
 nav {
     height: 5rem;
     display: flex;
@@ -56,6 +70,42 @@ nav .nav-logo-container img{
 }
 
 nav .profile-link a {
-    color: black;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #E2E4E9;
+    color: #E2E4E9;
+    font-weight: bold;
+}
+.main-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    height: 25rem;
+    justify-content: space-around;
+}
+.main-content .main-title {
+    font-size: 2rem;
+    font-weight: bold;
+    background-color: var(--dark-gray);
+    padding: 1rem 2rem;
+    border-radius: 12px;
+    box-shadow: 0rem 1rem 2rem var(--normal-gray);
+}
+.main-content .main-button {
+    font-size: 1rem;
+    font-weight: bold;
+    background: none;
+    background-color: var(--dark-gray);
+    padding: 1rem 3rem;
+    border-radius: 12px;
+    border: none;
+    border-top: 2px solid var(--normal-gray);
+    color: inherit;
+    font-family: inherit;
+    cursor: pointer;
+    outline: inherit;
+    transition: all 0.5s ease-out;
+}
+.main-content .main-button:hover {
+    background-color: #272A30;
+    border-top: 2px solid #2F3238;
 }
