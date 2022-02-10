@@ -12,8 +12,10 @@ body {
     bottom: 0;
     left: 0;
     right: 0;
-    background-image: url(https://forums.comunidades.riotgames.com/t5/image/serverpage/image-id/4519i33D4EDDD364A28F8?v=v2);
+    background: url(https://forums.comunidades.riotgames.com/t5/image/serverpage/image-id/4519i33D4EDDD364A28F8?v=v2);
     background-size: cover;
+    background-repeat: no-repeat;
+    backdrop-filter: brightness(50%);
     font-family: 'Inter', sans-serif;
     color: #E2E4E9;
 }
